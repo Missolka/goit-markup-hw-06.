@@ -363,8 +363,54 @@
                 </use>
             </svg>
         </button>
+
+        <p class="form-title">Leave your contacts and we will call you back</p>
+         <form class="modal-form">   
+        <label class="modal-form-field">
+        <span class="modal-form-input-desc">Name</span>
+        <span class="modal-form-input-wrapper">
+        <input class="form-input" type="text" name="name" required>
+        <svg class="form-icon" width="12" height="12">
+            <use href="./images/sprite-3.svg#icon-man"></use>
+        </svg>
+    </span>
+        </label>
+
+       <label class="modal-form-field">
+        <span class="modal-form-input-desc">Phone</span>
+        <span class="modal-form-input-wrapper">
+        <input class="form-input" type="phone" name="phone" required>
+        <svg class="form-icon" width="13" height="13">
+            <use href="./images/sprite-3.svg#icon-phone"></use>
+        </svg>
+    </span>
+       </label>
+
+       <label class="modal-form-field">
+        <span class="modal-form-input-desc">Email</span>
+        <span class="modal-form-input-wrapper">
+        <input class="form-input" type="email" name="email" required>
+        <svg class="form-icon" width="15" height="12">
+            <use href="./images/sprite-3.svg#icon-email"></use>
+        </svg>
+        </span>
+    </label>
+
+      <label class="modal-form-field">
+        <span class="modal-form-input-desc">Comment</span>
+       <textarea class="modal-form-comment" name="user-comment" placeholder="Text input"></textarea>
+       </label>
+
+       <input id="user-policy" type="checkbox" name="user-policy" class="modal-form-check visually-hidden">
+       <label for="user-policy" class="modal-form-check-desc">I accept the terms and conditions of the &nbsp;<a href="policy">Privacy Policy</a>
+    </label>
+
+      <button class="form-modal-btn btn" type="submit">Send</button>
+      </form>
     </div>
     </div>
+
+    
 <!--/Footer-->
 <script src="./main.js/modal.js"></script>
 </body>
