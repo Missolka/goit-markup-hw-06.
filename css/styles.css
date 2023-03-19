@@ -784,7 +784,8 @@ transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
  line-height: 1.5;
  text-align: center;
  letter-spacing: 0.02em;
-  color: var(--accent-text-color);
+ color: var(--accent-text-color);
+ margin-bottom: 16px;
   
  }
  .modal-form{
@@ -797,11 +798,11 @@ font-size: 12px;
 line-height: 1.16;
 color: var(--clients-color);
 display:block;
-margin-top:16px;
 margin-bottom: 4px;
  }
  .modal-form-field{
   position: relative;
+  margin-bottom: 8px;
 
  }
   .modal-form-field:focus{
@@ -825,7 +826,6 @@ margin-bottom: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline:none;
   padding: 8px 38px;
-  margin-top:4px;
   color:var(--form-input);
  }
  .form-input:focus{
@@ -856,6 +856,24 @@ margin-bottom: 4px;
   outline:none;
   border-color:var(--button-color);
  }
+
+ .modal-form-custom-checkbox{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px solid var(--title-color);
+ }
+.modal-form-check-icon{
+  display:block;
+  align-items: center;
+  justify-content: center;
+  opacity:0;
+  border: none;
+}
  .modal-form-check-desc{
   color:var(--clients-color);
   font-size: 12px;
@@ -863,24 +881,16 @@ margin-bottom: 4px;
   letter-spacing: 0.04em;
   display:flex;
   align-items: center;
-  margin-top: 16px;
   margin-bottom: 24px;
  }
-.modal-form-check-desc::before{
-  content:"";
-  width:16px;
-  height: 16px;
-  display: block;
-  border-radius:2px ;
-  cursor: pointer;
-  border-radius: 2px;
-  border:1.25px solid var(--background-color);
-  margin-right:8px;
+
+.modal-form-check:checked + .modal-form-custom-checkbox{
+  background-color: var(--accent-text-color);
+  border: 1px solid var(--accent-text-color);
 }
-.modal-form-check:checked + .modal-form-check-desc::before{
-  background-image: url(../images/icon-click.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.modal-form-check:checked + .modal-form-custom-checkbox .modal-form-check-icon{
+  opacity:1;
+  fill:var
 }
  .modal-form-input-wrapper{
   position:relative;

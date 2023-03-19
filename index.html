@@ -417,10 +417,15 @@
        <textarea class="modal-form-comment" name="user-comment" placeholder="Text input"></textarea>
        </label>
 
-       <label for="user-policy" class="modal-form-check-desc">I accept the terms and conditions of the &nbsp;<a href="policy">Privacy Policy</a>
-        <input id="user-policy" type="checkbox" name="user-policy" class="modal-form-check visually-hidden">
+       <label class="modal-form-label">
+        <input type="checkbox" name="user-policy" class="modal-form-check visually-hidden">
+        <span class="modal-form-custom-checkbox">
+        <svg class="modal-form-check-icon" width="16" height="16">
+        <use href="./images/sprite-3.svg#icon-click"></use>
+        </svg>
+        </span>
+        <span class="modal-form-check-desc">I accept the terms and conditions of the &nbsp;<a href="policy">Privacy Policy</a></span>
     </label>
-
       <button class="form-modal-btn btn" type="submit">Send</button>
       </form>
     </div>
